@@ -1,4 +1,4 @@
-/* RESET & BASE */
+
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +11,7 @@ body {
   background-color: #fff;
 }
 
-/* NAVBAR */
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -57,7 +57,7 @@ nav {
   font-size: 1vw;
 }
 
-/* HERO SECTION */
+
 .hero {
   display: flex;
   justify-content: space-between;
@@ -108,7 +108,7 @@ nav {
   height: auto;
 }
 
-/* LOGO ANIMATION */
+
 @keyframes logoani {
   0% { transform: rotate(0deg); }
   25% { transform: rotate(90deg); }
@@ -117,24 +117,20 @@ nav {
   100% { transform: rotate(360deg); }
 }
 
-/* =========================
-   RESPONSIVE SHRINK RULES
-========================= */
 
-/* Medium and small screens */
 @media (max-width: 700px) {
   html {
     font-size: 85%;
   }
 
-  /* Keep logo + username on same row */
+  
   nav {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
   }
 
-  /* Stack only the nav-links vertically */
+ 
   .nav-links ul {
     flex-direction: column;
     align-items: center;
@@ -143,7 +139,7 @@ nav {
     margin-top: 1vh;
   }
 
-  /* Hero adjusts to center layout */
+  
   .hero {
     flex-direction: column;
     text-align: center;
@@ -175,7 +171,7 @@ nav {
   }
 }
 
-/* Ultra-small screens */
+
 @media (max-width: 400px) {
   html {
     font-size: 70%;
@@ -198,7 +194,7 @@ nav {
     width: 50vw;
   }
 
-  /* Slightly tighter nav spacing */
+  
   .nav-links ul {
     gap: 0.5vh;
   }
