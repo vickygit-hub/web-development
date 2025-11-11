@@ -1,10 +1,10 @@
-// Select all boxes
+
 const redbox = document.getElementById('Red-box');
 const bluebox = document.getElementById('Blue-box');
 const greenbox = document.getElementById('Green-box');
 const yellowbox = document.getElementById('Yellow-box');
 
-// Add event listeners
+
 redbox.addEventListener('click', () => {
   redbox.style.backgroundColor = 'red';
 });
@@ -31,9 +31,9 @@ const header = document.querySelector('.header h2');
 
 const form = document.getElementById('greet-form');
 form.addEventListener('submit', (e) => {
-  e.preventDefault(); // Prevent form submission
+  e.preventDefault();
   const nameInput = document.getElementById('name');
   const name = nameInput.value;
   header.textContent = `Hello, ${name}!`;
-  nameInput.value = ''; // Clear input field
+  nameInput.value = '';
 })
