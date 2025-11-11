@@ -8,6 +8,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="vendors/css/normalize.css">
   <link rel="stylesheet" href="resources/css/style.css">
+  <link rel="stylesheet" href="resources/css/queries.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- <link rel="stylesheet" href="vendors/css/grid.css"> -->
 </head>
 
@@ -19,20 +21,20 @@
             
 
             <ul class="main-nav">
-                <li><a href="#">Food delivery</a></li>
-                <li><a href="#">How it works</a></li>
-                <li><a href="#">Our cities</a></li>
-                <li><a href="#">Sign-up</a></li>
+                <li><a href="#features">Food delivery</a></li>
+                <li><a href="#hiw">How it works</a></li>
+                <li><a href="#city">Our cities</a></li>
+                <li><a href="#sign-up">Sign-up</a></li>
             </ul>
         </div>
         </nav>
         <div class="hero-text-box">
             <h1>Goodbye Junk Food!<br> Hello Super Healthy Meals</h1>
-            <a  class="btn btn-full"   href="#">I'm Hungry</a>
-            <a  class="btn btn-ghost"   href="#">Show me more</a>
+            <a  class="btn btn-full"   href="#plans">I'm Hungry</a>
+            <a  class="btn btn-ghost"   href="#features">Show me more</a>
         </div>
     </header>
-    <section class="section-features">
+    <section class="section-features" id="features" data-aos="fade-in" data-aos-duration="4000">
         <div class="row">
             <h2>Get food fast - Not fast food</h2>
             <p class="Long-copy">Hello, we're Omnifood, your new premium food delivery service. We know you're always busy. No time for cooking. So let us take care of that, we're really good at it, we promise!</p>
@@ -62,7 +64,7 @@
         </div> 
       </section>
     
-      <section class="section-meals">
+      <section class="section-meals" data-aos="fade-in" data-aos-duration="4000">
         <ul class="meals-showcase">
             <li>
                 <figure class="meal-photo">
@@ -117,13 +119,14 @@
 
         </ul>
       </section>
-      <section class="section-steps">
+
+      <section class="section-steps" id="hiw" data-aos="fade-in" data-aos-duration="4000">
         <div class="row">
             <h2>How it works &mdash; Simple as 1,2,3</h2>
         </div>
         <div class="row-steps">
             <div class="col span-1-of-2 steps-box">
-                <img class="mob-img" src="/The Killler Website/resources/img/mobile.png" alt="steps to order">
+                <img data-aos="slide-left" data-aos-duration="4000" class="mob-img" src="/The Killler Website/resources/img/mobile.png" alt="steps to order">
             </div>
             <div class="col span-1-of-2 steps-box">
                 <div class="works-step">
@@ -149,8 +152,339 @@
         </div>
       </section>
 
+      <section class="section-cities" id="city" data-aos="fade-in" data-aos-duration="4000">
+        <div class="row-city">
+            <h2>We're currently in these cities</h2>
+        </div>
+        <div class="row-cities">
+            <div class="col span-1-of-4">
+                <img src="/The Killler Website/resources/img/lisbon.jpg" alt="Lisbon">
+                <h3>Lisbon</h3>
+                <div class="city-features">
+                    <ion-icon class="icon-small" name="person-circle-outline"></ion-icon>
+                    1600+ Happy Eaters
+                </div>
+                <div class="city-features">
+                    <ion-icon class="icon-small" name="star-sharp"></ion-icon>
+                    50+ Chefs
+                </div>
+                <div class="city-features">
+                    <ion-icon class="icon-small" name="logo-twitter"></ion-icon>
+                    @chefskitchen_li
+                </div>
+            </div>
+            <div class="col span-1-of-4">
+                <img src="/The Killler Website/resources/img/berlin.jpg" alt="Berlin">
+                <h3>Berlin</h3>
+                <div class="city-features">
+                    <ion-icon class="icon-small" name="person-circle-outline"></ion-icon>
+                    1400+ Happy Eaters
+                </div>
+                <div class="city-features">
+                    <ion-icon class="icon-small" name="star-sharp"></ion-icon>
+                    70+ Chefs
+                </div>
+                <div class="city-features">
+                    <ion-icon class="icon-small" name="logo-twitter"></ion-icon>
+                    @chefskitchen_br
+                </div>
+            </div>
+            <div class="col span-1-of-4">
+                <img src="/The Killler Website/resources/img/san-francisco.jpg" alt="San-Francisco">
+                <h3>San-Francisco</h3>
+                <div class="city-features">
+                    <ion-icon class="icon-small" name="person-circle-outline"></ion-icon>
+                    1800+ Happy Eaters
+                </div>
+                <div class="city-features">
+                    <ion-icon class="icon-small" name="star-sharp"></ion-icon>
+                    50+ Chefs
+                </div>
+                <div class="city-features">
+                    <ion-icon class="icon-small" name="logo-twitter"></ion-icon>
+                    @chefskitchen_sf
+                </div>
+            </div>
+            <div class="col span-1-of-4">
+                <img src="/The Killler Website/resources/img/london.jpg" alt="London">
+                <h3>London</h3>
+                <div class="city-features">
+                    <ion-icon class="icon-small" name="person-circle-outline"></ion-icon>
+                    1600+ Happy Eaters
+                </div>
+                <div class="city-features">
+                    <ion-icon class="icon-small" name="star-sharp"></ion-icon>
+                    50+ Chefs
+                </div>
+                <div class="city-features">
+                    <ion-icon class="icon-small" name="logo-twitter"></ion-icon>
+                    @chefskitchen_lo
+                </div>
+            </div>
+        </div>
+      </section>
 
+      <section class="section-customer" data-aos="fade-in" data-aos-duration="4000">
+        <div class="row-cust">
+            <h2>Our customer can't live without us</h2>
+        </div>
+        <div class="row-cust">
+            <div class="col span-1-of-3">
+                <blockquote>Omnifood is just awesome! I just launched a startup which leaves me with no time 
+                    for cooking, so omnifood os life-saver. Now that i got used to it , I couldn't live without
+                     my daily meals <br><br>
+                     <cite><img src="/The Killler Website/resources/img/cust1.jpg" alt="">Alberto Duncan</cite>
+                    </blockquote>
+            </div>
+             <div class="col span-1-of-3">
+                <blockquote>Inexpensive, healthy and great -tasting meals, delivered right to 
+                    my home. we have lots of food delivery here in lisbon,
+                     but no one comes even close to omnifood. He and my family are so in love<br><br>
+                     <cite><img src="/The Killler Website/resources/img/cust2.jpg" alt="">Joana silva</cite>
+                    </blockquote>
+            </div>
+             <div class="col span-1-of-3">
+                <blockquote>I was looking for a quick and easy food delivery service in san francisco.
+                     I tried a lot of then and ended up with omnifood. Best food delivery service in the
+                      Bay area. keep up the the great work.<br><br>
+                     <cite><img src="/The Killler Website/resources/img/cust3.jpg" alt="">Milton Chapman</cite>
+                    </blockquote>
+            </div>
+
+        </div>
+      </section>
+
+      <section class="section-plans" id="plans" data-aos="fade-in" data-aos-duration="4000">
+        <div class="row ">
+            <h2>Start eating healthy today</h2>
+        </div>
+        <div class="plans">
+            <div class="rows">
+                <div class="col span-1-of-3 plans-flex">
+                    <div class="plan-box">
+                        <div data-aos="zoom-in" data-aos-duration="4000">
+                            <h3>premium</h3>
+                            <p class="plan-price"><span>399$</span>/month</p>
+                            <p class="plan-price-meal">That's only 13.905$ per meal</p>
+                        </div>
+                        <div class="ulli">
+                            <ul><li>
+                                <ion-icon name="checkmark-outline"></ion-icon>
+                                1 meal in 5
+                            </li>
+                            <li>
+                                <ion-icon name="checkmark-outline"></ion-icon>
+                                order 24*7
+                            </li>
+                            <li>
+                                <ion-icon name="checkmark-outline"></ion-icon>
+                                Access to newest creations
+                            </li>
+                            <li>
+                                <ion-icon name="checkmark-outline"></ion-icon>
+                                Free delivery
+                            </li></ul>
+                        </div>
+                        <div>
+                            <a href="" class="btn btn-full">Sign Up</a>
+                        </div>
+                    </div>
+                    <div class="plan-box">
+                        <div data-aos="zoom-in" data-aos-duration="4000">
+                            <h3>pro</h3>
+                            <p class="plan-price"><span>199$</span>/month</p>
+                            <p class="plan-price-meal">That's only 10.905$ per meal</p>
+                        </div>
+                        <div class="ulli">
+                            <ul><li>
+                                <ion-icon name="checkmark-outline"></ion-icon>
+                                1 meal in 10
+                            </li>
+                            <li>
+                                <ion-icon name="checkmark-outline"></ion-icon>
+                                order 24*7
+                            </li>
+                            <li>
+                                <ion-icon name="checkmark-outline"></ion-icon>
+                                Access to newest creations
+                            </li>
+                            <li>
+                                <ion-icon name="checkmark-outline"></ion-icon>
+                                Free delivery
+                            </li></ul>
+                        </div>
+                        <div>
+                            <a href="" class="btn btn-ghost">Sign Up</a>
+                        </div>
+                    </div>
+                        
+                    <div class="plan-box">
+                        <div data-aos="zoom-in" data-aos-duration="4000">
+                            <h3>Starter</h3>
+                            <p class="plan-price"><span>19$</span>/meal</p>
+                            <p class="plan-price-meal">&nbsp;</p>
+                        </div>
+                        <div class="ulli">
+                            <ul><li>
+                                <ion-icon name="checkmark-outline"></ion-icon>
+                                1 meal in month
+                            </li>
+                            <li>
+                                <ion-icon name="checkmark-outline"></ion-icon>
+                                order 24*7
+                            </li>
+                            <li>
+                                <ion-icon name="close-outline"></ion-icon>
+                                
+                            </li>
+                            <li>
+                                <ion-icon name="checkmark-outline"></ion-icon>
+                                Free delivery
+                            </li></ul>
+                        </div>
+                        <div>
+                            <a href="" class="btn btn-full">Sign Up</a>
+                        </div>
+                    </div>
+                        
+                        
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <section class="section-form" id="sign-up" data-aos="fade-in" data-aos-duration="4000">
+        <div class="row">
+            <h2>We're happy to hear from you</h2>
+        </div>
+        <div class="row row-form">
+            <form action="#" method="POST" class="contact-form">
+                <div></div>
+                <div class="row form-first col-name">
+                    <div class="col  span-1-of-3">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="text" name="name" id="name" placeholder="Your Name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label for="Email">Email</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="Email" name="Email" id="Email" placeholder="Your Email">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label name="find-us">How did you find us</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <select name="find-us" id="find-us">
+                            <option value="friends">Friends</option>
+                            <option value="search">Search</option>
+                            <option value="ad">Advertisement</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col span-1-of-3">
+                        <label>Newsletter?</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <input type="checkbox" name="news" id="news" checked>
+                    </div>
+                </div>
+                <div class="row  textria">
+                    <div class="col span-1-of-3">
+                        <label>Drop a line</label>
+                    </div>
+                    <div class="col span-2-of-3">
+                        <textarea name="text" id="ta" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <div class="row row-submit">
+                    <div class="col span-1-of-5">
+                        <label>&nbsp;</label>
+                    </div>
+                    <div class="col submit-div">
+                        <input type="submit" value="send-me">
+                    </div>
+                </div>
+            </form>
+        </div>
+      </section>
+
+      <footer>
+        <div class="rowfoot">
+            <div class="col-links">
+                <ul class="footer-navi">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">IOS App</a></li>
+                    <li><a href="#">Android App</a></li>
+                </ul>
+            </div>
+            <div class="col-social">
+                <ul>
+                    <li>
+                        <ion-icon class="fb" name="logo-facebook"></ion-icon>
+                    </li>
+                    <li>
+                        <ion-icon class="twitter" name="logo-twitter"></ion-icon>
+                    </li>
+                    <li>
+                        <ion-icon class="google" name="logo-google"></ion-icon>
+                    </li>
+                    <li>
+                        <ion-icon class="insta" name="logo-instagram"></ion-icon>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="rowfooter">
+            <p>Copyright &copy; 2015 by omnifood.  All rights reserved </p>
+        </div>
+      </footer>
+
+      <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
       <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+      <script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+      
 </body>
 </html>
