@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreshWash - Laundry Services </title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+   <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap">
+    <script src="https://cdn.emailjs.com/sdk/3.2.0/email.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend:{
+                    colors:{
+                        primary:{
+                            400: '#38bdf8',
+                            500: '#06b6d4',
+                            700: '#0891b2',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+        body{
+            font-family: 'inter', sans-serif
+        }
+        </style>
+        <link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head> 
+
+<body class="bg-slate-50">
+
+    <header class="bg-white shadow sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <img src="resources/img/logowash.jpeg" alt="logo" class="w-11 h-11" onerror="this.style.display='none'">
+                <span class="font-bold text-xl">FreshWash</span>
+            </div>
+
+            <nav class="hidden md:flex gap-6">
+                <a href="#Home">Home</a>
+                <a href="#Services">Services</a>
+                <a href="#Quality">Quality</a>
+                <a href="#Newsletter">Newsletter</a>
+                <a href="#Contact">Contact</a>
+            </nav>
+
+            <div>
+                <button class=" px-5 py-3 flex gap-2 items-center bg-primary-500 text-white rounded-lg shadow">Username</button>
+            </div>
+
+            <button class="md:hidden">☰</button>
+        </div>
+    </header>
+
+    <section id="Home" class="max-w-6xl items-center mx-auto px-4 py-14 flex flex-col md:flex-row  justify-between ">
+        <div class="md:w-1/2">
+            <h1 class="text-4xl font-bold">Revitalize your clothes</h1>
+            <p class="text-slate-600 mt-4">From premium dry cleaning to swift wash and fold, we deliver care and convenience. Schedule a pickup and rediscover the freshness of your clothes today!</p>
+            <button id="scrollToServices" class="mt-6 px-5 py-3 flex gap-2 items-center bg-primary-500 text-white rounded-lg shadow"><span><img src="resources/img/store_front_building_marketplace_commerce_icon_225183.ico" alt="icon"></span>Book a Servive Today</button>
+        </div>
+
+        <div>
+            <img src="resources/img/images (1).jpeg" class="rounded shadow my-5 w-xl gap-2  " alt="">
+        </div>
+    </section>
+
+    <Section class="bg-blue-200 p-6">
+        <div class="max-w-6xl  mx-auto lg:flex md:grid gap-10   px-3 text-center items-center justify-between">
+            <h2 class="text-3xl font-bold text-left underline ">Our Acheivements</h2>
+            
+            
+            <div class="bg-white p-6 rounded shadow">
+                <div class="text-3xl font-bold">2+</div>
+                <p class="text-slate-500">Happy Experience</p>
+            </div>
+
+            <div class="bg-white p-6 rounded shadow">
+                <div class="text-3xl font-bold">240+</div>
+                <p class="text-slate-500">Happy Clients</p>
+            </div>
+
+            <div class="bg-white p-6 rounded shadow">
+                <div class="text-3xl font-bold">2+</div>
+                <p class="text-slate-500">Years Experience</p>
+            </div>
+        </div>
+    </Section>
+
+    <section id="Services" class="max-w-6xl mx-auto px-4 py-10 grid lg:grid-cols-2 gap-10">
+        <div>
+            <h2 class="text-2xl font-bold">Our Services</h2>
+            <div id="servicelist" class="grid sm:grid-cols-2 gap-4 mt-6"></div>
+        </div>
+
+        <div class="space-y-6">
+            <div class="bg-white p-6 rounded shadow">
+                <h3 class="font-semibold">Your Cart</h3>
+                <table class="w-full mt-4" id="cartTable">
+                    <tbody id="cartbody">
+                        <tr>
+                            <td class="text-slate-500 py-3">No items added</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="mt-4 font-bold flex justify-between">
+                    Total: <span id="totalAmount">₹0</span>
+                </div>
+            </div>
+
+            <form action="" id="bookingForm" class="bg-white p-6 rounded shadow space-y-4">
+                <h3 class="font-semibold">Book Now</h3>
+                <input type="text" id="name" required placeholder="Full Name" class="border p-2 w-full rounded">
+                <input type="email" id="email" required placeholder="Email" class="border p-2 w-full rounded">
+                <input type="text" id="phone" required placeholder="Phone no." class="border p-2 w-full rounded">
+                <button class="bg-primary-500 text-white px-4 py-2 rounded w-full">Book Service</button>
+                <p id="bookingMsg" class="text-green-600"></p>
+            </form>
+        </div>
+    </section>
+    
+   <section id="Quality" class="max-w-6xl mx-auto px-4 py-20">
+    <h2 class="text-center text-3xl font-bold mb-10">Why Choose Us?</h2>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 text-center">
+        
+        <div>
+            <img src="resources/img/quality1.png" class="w-14 mx-auto mb-4">
+            <h4 class="font-semibold text-lg">Premium Services</h4>
+            <p class="text-slate-600 text-sm">
+                Elevate your wardrobe with our meticulous dry cleaning, ensuring garments look and feel as good as new.
+            </p>
+        </div>
+
+        <div>
+            <img src="resources/img/quality2.png" class="w-14 mx-auto mb-4">
+            <h4 class="font-semibold text-lg">Quick Support</h4>
+            <p class="text-slate-600 text-sm">
+                We're committed to providing prompt solutions so your experience is smooth and worry-free.
+            </p>
+        </div>
+
+        <div>
+            <img src="resources/img/quality3.png" class="w-14 mx-auto mb-4">
+            <h4 class="font-semibold text-lg">Hassle Free Delivery</h4>
+            <p class="text-slate-600 text-sm">
+                Enjoy seamless service with convenient pickup and delivery options tailored to your schedule.
+            </p>
+        </div>
+
+        <div>
+            <img src="resources/img/quality4.png" class="w-14 mx-auto mb-4">
+            <h4 class="font-semibold text-lg">Affordable Prices</h4>
+            <p class="text-slate-600 text-sm">
+                Experience exceptional care without breaking the bank—our prices make laundry day stress-free.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+    <section id="Newsletter" class="bg-blue-500 py-14">
+    <div class="max-w-6xl mx-auto px-4 text-white">
+
+        <h2 class="text-3xl font-bold mb-2">Subscribe to our newsletter.</h2>
+
+        <div class="flex flex-col sm:flex-row gap-4 mt-6">
+
+            <input type="text" placeholder="Full name" 
+                class="p-3 rounded w-full sm:w-auto text-white font-semibold hover:bg-slate-100 ">
+
+            <input type="email" placeholder="Email" 
+                class="p-3 rounded w-full sm:w-auto text-white font-semibold hover:bg-slate-100">
+
+            <button class="bg-white text-blue-600 px-6 py-3 rounded font-semibold hover:bg-slate-100">
+                Subscribe
+            </button>
+
+        </div>
+
+    </div>
+</section>
+
+
+    <footer id="Contact" class="bg-slate-100 py-14 mt-10">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-4 gap-8">
+
+        <div>
+            <h3 class="font-bold text-lg">Logo</h3>
+            <p class="mt-2 text-slate-600 text-sm">
+                Lorem Ipsum Dolor Sit Amet Consectetur. Sed At Congue.
+            </p>
+        </div>
+
+        <div>
+            <h3 class="font-semibold text-lg">Important Links</h3>
+            <ul class="mt-3 text-slate-600 space-y-1 text-sm">
+                <li>About us</li>
+                <li>Contact us</li>
+                <li>Privacy Policy</li>
+                <li>Terms of use</li>
+                <li>Refund Policy</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3 class="font-semibold text-lg">Contact</h3>
+            <p class="mt-3 text-slate-600 text-sm">mail@site.com</p>
+            <p class="text-slate-600 text-sm">+91 91234 56780</p>
+        </div>
+
+        <div>
+            <h3 class="font-semibold text-lg">Follow Us</h3>
+            <div class="flex gap-4 mt-4 text-slate-600 text-xl">
+                <span class="fab fa-instagram"></span>
+                <span class="fab fa-facebook"></span>
+                <span class="fab fa-twitter"></span>
+                <span class="fab fa-youtube"></span>
+            </div>
+        </div>
+
+    </div>
+
+    <p class="text-center text-slate-500 mt-10 text-sm">
+        © <span id="year"></span> FreshWash — All Rights Reserved
+    </p>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+    emailjs.init("wNUcYlbSOjzKOOr2v");
+    </script>
+
+
+    <script  src="script.js"></script>
+</body>
+</html>
